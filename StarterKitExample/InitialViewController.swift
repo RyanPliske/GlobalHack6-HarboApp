@@ -1,9 +1,15 @@
-//
-//  InitialViewController.swift
-//  StarterKitExample
-//
-//  Created by PLISKE, RYAN [AG-Contractor/1000] on 10/9/16.
-//  Copyright © 2016 competidev. All rights reserved.
-//
+import UIKit
 
-import Foundation
+class InitialViewController: UIViewController {
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        self.view.backgroundColor = UIColor.magentaColor()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.view.backgroundColor = UIColor.magentaColor()
+    }
+    
+}

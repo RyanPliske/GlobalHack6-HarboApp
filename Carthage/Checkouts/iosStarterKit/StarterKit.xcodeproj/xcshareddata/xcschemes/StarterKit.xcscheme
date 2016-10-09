@@ -3,7 +3,7 @@
    LastUpgradeVersion = "0730"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "NO"
+      parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F996D45D1DAA984E00DAC469"
-               BuildableName = "StarterKitExample.app"
-               BlueprintName = "StarterKitExample"
-               ReferencedContainer = "container:StarterKitExample.xcodeproj">
+               BlueprintIdentifier = "F95D54B21DA88D0600028D06"
+               BuildableName = "StarterKit.framework"
+               BlueprintName = "StarterKit"
+               ReferencedContainer = "container:StarterKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F996D45D1DAA984E00DAC469"
-            BuildableName = "StarterKitExample.app"
-            BlueprintName = "StarterKitExample"
-            ReferencedContainer = "container:StarterKitExample.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F996D45D1DAA984E00DAC469"
-            BuildableName = "StarterKitExample.app"
-            BlueprintName = "StarterKitExample"
-            ReferencedContainer = "container:StarterKitExample.xcodeproj">
+            BlueprintIdentifier = "F95D54B21DA88D0600028D06"
+            BuildableName = "StarterKit.framework"
+            BlueprintName = "StarterKit"
+            ReferencedContainer = "container:StarterKit.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F996D45D1DAA984E00DAC469"
-            BuildableName = "StarterKitExample.app"
-            BlueprintName = "StarterKitExample"
-            ReferencedContainer = "container:StarterKitExample.xcodeproj">
+            BlueprintIdentifier = "F95D54B21DA88D0600028D06"
+            BuildableName = "StarterKit.framework"
+            BlueprintName = "StarterKit"
+            ReferencedContainer = "container:StarterKit.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

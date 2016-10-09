@@ -7,24 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F90E5D781DAAF71300064708 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E5D771DAAF71300064708 /* InitialViewController.swift */; };
 		F996D4621DAA984E00DAC469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996D4611DAA984E00DAC469 /* AppDelegate.swift */; };
-		F996D4641DAA984E00DAC469 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996D4631DAA984E00DAC469 /* ViewController.swift */; };
-		F996D4671DAA984E00DAC469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F996D4651DAA984E00DAC469 /* Main.storyboard */; };
 		F996D4691DAA984E00DAC469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F996D4681DAA984E00DAC469 /* Assets.xcassets */; };
 		F996D46C1DAA984E00DAC469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F996D46A1DAA984E00DAC469 /* LaunchScreen.storyboard */; };
+		F996D4A01DAA9BF200DAC469 /* StarterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F996D49F1DAA9B0600DAC469 /* StarterKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F996D48C1DAA997F00DAC469 /* PBXContainerItemProxy */ = {
+		F996D49E1DAA9B0600DAC469 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F996D4881DAA997F00DAC469 /* StarterKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F95D54B31DA88D0600028D06;
-			remoteInfo = StarterKit;
-		};
-		F996D4951DAA9A5A00DAC469 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F996D4911DAA9A5A00DAC469 /* StarterKit.xcodeproj */;
+			containerPortal = F996D49A1DAA9B0600DAC469 /* StarterKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F95D54B31DA88D0600028D06;
 			remoteInfo = StarterKit;
@@ -32,15 +25,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F90E5D771DAAF71300064708 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		F996D45E1DAA984E00DAC469 /* StarterKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F996D4611DAA984E00DAC469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F996D4631DAA984E00DAC469 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F996D4661DAA984E00DAC469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F996D4681DAA984E00DAC469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F996D46B1DAA984E00DAC469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F996D46D1DAA984E00DAC469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F996D4881DAA997F00DAC469 /* StarterKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StarterKit.xcodeproj; path = ../StarterKit/StarterKit.xcodeproj; sourceTree = "<group>"; };
-		F996D4911DAA9A5A00DAC469 /* StarterKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StarterKit.xcodeproj; path = ../StarterKit/StarterKit.xcodeproj; sourceTree = "<group>"; };
+		F996D49A1DAA9B0600DAC469 /* StarterKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StarterKit.xcodeproj; path = ../StarterKit/StarterKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F996D4A01DAA9BF200DAC469 /* StarterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,10 +49,9 @@
 		F996D4551DAA984E00DAC469 = {
 			isa = PBXGroup;
 			children = (
-				F996D4911DAA9A5A00DAC469 /* StarterKit.xcodeproj */,
-				F996D4881DAA997F00DAC469 /* StarterKit.xcodeproj */,
 				F996D4601DAA984E00DAC469 /* StarterKitExample */,
 				F996D45F1DAA984E00DAC469 /* Products */,
+				F996D49A1DAA9B0600DAC469 /* StarterKit.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,8 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				F996D4611DAA984E00DAC469 /* AppDelegate.swift */,
-				F996D4631DAA984E00DAC469 /* ViewController.swift */,
-				F996D4651DAA984E00DAC469 /* Main.storyboard */,
+				F90E5D771DAAF71300064708 /* InitialViewController.swift */,
 				F996D4681DAA984E00DAC469 /* Assets.xcassets */,
 				F996D46A1DAA984E00DAC469 /* LaunchScreen.storyboard */,
 				F996D46D1DAA984E00DAC469 /* Info.plist */,
@@ -85,18 +75,10 @@
 			path = StarterKitExample;
 			sourceTree = "<group>";
 		};
-		F996D4891DAA997F00DAC469 /* Products */ = {
+		F996D49B1DAA9B0600DAC469 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F996D48D1DAA997F00DAC469 /* StarterKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F996D4921DAA9A5A00DAC469 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F996D4961DAA9A5A00DAC469 /* StarterKit.framework */,
+				F996D49F1DAA9B0600DAC469 /* StarterKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +93,7 @@
 				F996D45A1DAA984E00DAC469 /* Sources */,
 				F996D45B1DAA984E00DAC469 /* Frameworks */,
 				F996D45C1DAA984E00DAC469 /* Resources */,
+				F996D4A21DAA9E1B00DAC469 /* Carthage Copy */,
 			);
 			buildRules = (
 			);
@@ -149,12 +132,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = F996D4891DAA997F00DAC469 /* Products */;
-					ProjectRef = F996D4881DAA997F00DAC469 /* StarterKit.xcodeproj */;
-				},
-				{
-					ProductGroup = F996D4921DAA9A5A00DAC469 /* Products */;
-					ProjectRef = F996D4911DAA9A5A00DAC469 /* StarterKit.xcodeproj */;
+					ProductGroup = F996D49B1DAA9B0600DAC469 /* Products */;
+					ProjectRef = F996D49A1DAA9B0600DAC469 /* StarterKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -165,18 +144,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		F996D48D1DAA997F00DAC469 /* StarterKit.framework */ = {
+		F996D49F1DAA9B0600DAC469 /* StarterKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = StarterKit.framework;
-			remoteRef = F996D48C1DAA997F00DAC469 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F996D4961DAA9A5A00DAC469 /* StarterKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = StarterKit.framework;
-			remoteRef = F996D4951DAA9A5A00DAC469 /* PBXContainerItemProxy */;
+			remoteRef = F996D49E1DAA9B0600DAC469 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -188,33 +160,42 @@
 			files = (
 				F996D46C1DAA984E00DAC469 /* LaunchScreen.storyboard in Resources */,
 				F996D4691DAA984E00DAC469 /* Assets.xcassets in Resources */,
-				F996D4671DAA984E00DAC469 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F996D4A21DAA9E1B00DAC469 /* Carthage Copy */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/StarterKit.framework",
+			);
+			name = "Carthage Copy";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F996D45A1DAA984E00DAC469 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F996D4641DAA984E00DAC469 /* ViewController.swift in Sources */,
 				F996D4621DAA984E00DAC469 /* AppDelegate.swift in Sources */,
+				F90E5D781DAAF71300064708 /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F996D4651DAA984E00DAC469 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F996D4661DAA984E00DAC469 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F996D46A1DAA984E00DAC469 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -313,10 +294,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = StarterKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = competeidev.StarterKitExample;
+				PRODUCT_BUNDLE_IDENTIFIER = competidev.StarterKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -324,10 +308,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = StarterKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = competeidev.StarterKitExample;
+				PRODUCT_BUNDLE_IDENTIFIER = competidev.StarterKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
