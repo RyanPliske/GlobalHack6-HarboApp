@@ -1,3 +1,0 @@
-framework module StarterKit {
-    header "StarterKit-Swift.h"
-}
