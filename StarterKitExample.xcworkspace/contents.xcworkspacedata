@@ -4,4 +4,7 @@
    <FileRef
       location = "group:StarterKitExample.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:../StarterKit/StarterKit.xcodeproj">
+   </FileRef>
 </Workspace>
