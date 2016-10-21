@@ -10,6 +10,8 @@
 		F90E5D781DAAF71300064708 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E5D771DAAF71300064708 /* InitialViewController.swift */; };
 		F92FF9671DB456AF00C67430 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = F92FF9651DB456AF00C67430 /* Cartfile */; };
 		F92FF96A1DB45B2E00C67430 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F92FF9691DB45B2E00C67430 /* .gitignore */; };
+		F94380C01DB9A36F007328A5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94380BE1DB9A36F007328A5 /* FBSDKCoreKit.framework */; };
+		F94380C11DB9A36F007328A5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94380BF1DB9A36F007328A5 /* FBSDKLoginKit.framework */; };
 		F996D4621DAA984E00DAC469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996D4611DAA984E00DAC469 /* AppDelegate.swift */; };
 		F996D4691DAA984E00DAC469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F996D4681DAA984E00DAC469 /* Assets.xcassets */; };
 		F996D46C1DAA984E00DAC469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F996D46A1DAA984E00DAC469 /* LaunchScreen.storyboard */; };
@@ -19,6 +21,8 @@
 		F90E5D771DAAF71300064708 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		F92FF9651DB456AF00C67430 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		F92FF9691DB45B2E00C67430 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		F94380BE1DB9A36F007328A5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Checkouts/iosStarterKit/Frameworks/Facebook/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		F94380BF1DB9A36F007328A5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Checkouts/iosStarterKit/Frameworks/Facebook/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		F996D45E1DAA984E00DAC469 /* StarterKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F996D4611DAA984E00DAC469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F996D4681DAA984E00DAC469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F94380C01DB9A36F007328A5 /* FBSDKCoreKit.framework in Frameworks */,
+				F94380C11DB9A36F007328A5 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 		F996D4551DAA984E00DAC469 = {
 			isa = PBXGroup;
 			children = (
+				F94380BE1DB9A36F007328A5 /* FBSDKCoreKit.framework */,
+				F94380BF1DB9A36F007328A5 /* FBSDKLoginKit.framework */,
 				F996D4601DAA984E00DAC469 /* StarterKitExample */,
 				F996D45F1DAA984E00DAC469 /* Products */,
 			);
@@ -265,6 +273,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/iosStarterKit/Frameworks/Facebook",
+				);
 				INFOPLIST_FILE = StarterKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -279,6 +291,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/iosStarterKit/Frameworks/Facebook",
+				);
 				INFOPLIST_FILE = StarterKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

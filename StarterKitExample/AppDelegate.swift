@@ -1,5 +1,7 @@
 import UIKit
 import StarterKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, StarterKitDelegate {
@@ -9,9 +11,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, StarterKitDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         let fbInfo = FacebookInfo(facebookAppId: "580752305447916", facebookAppDisplayName: "StarterKit")
-        let appInfo = AppInfo(loginBackground: UIImage(named: "login1")!, facebookInfo: fbInfo)
+        let appInfo = AppInfo(facebookInfo: fbInfo)
         self.starter = Starter(window: &window, initialViewController: InitialViewController(), delegate: self, appInfo: appInfo)
-        return true
+        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
     func userWasAuthenticated(withCredentials credentials: Credentials) {
