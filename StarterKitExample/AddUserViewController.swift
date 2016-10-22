@@ -2,8 +2,12 @@ import UIKit
 
 class AddUserViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    
+    
+    @IBOutlet weak var dateOfBirth: UITextView!
+    
+//    @IBOutlet weak var dateOfBirth: UITextView!
     @IBOutlet weak var ssn: UITextField!
-    @IBOutlet weak var dateOfBirth: UITextField!
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var middleName: UITextField!
     @IBOutlet weak var firstName: UITextField!
@@ -18,7 +22,9 @@ class AddUserViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         super.viewDidLoad()
 
         ssn.delegate = self
-        dateOfBirth.delegate = self
+        if let dob = dateOfBirth as? dateOfBirthTextView {
+            dob.model = model
+        }
 //        dateOfBirth.userInteractionEnabled = false
         lastName.delegate = self
         middleName.delegate = self
@@ -35,13 +41,12 @@ class AddUserViewController: UIViewController, UITextFieldDelegate, UIImagePicke
             lastName.becomeFirstResponder()
         case lastName:
             model.setLastName(textField.text!)
-//            dateOfBirth.becomeFirstResponder()
-            DatePickerDialog().show("Choose birthdate", callback: { (date) in
-                let dateText = date!.returnDateAsString() //{
+            DatePickerDialog().show("Choose birthdate", defaultDate: model.getDateOfBirth(), callback: { (date) in
+                if let date = date {
+                    let dateText = date.returnDateAsString()
                     self.dateOfBirth.text = dateText
-                    self.model.setDateOfBirth(dateText)
-//                }
-                print(date)
+                    self.model.setDateOfBirth(date)
+                }
                 self.ssn.becomeFirstResponder()
             })
         case ssn:
@@ -64,25 +69,6 @@ class AddUserViewController: UIViewController, UITextFieldDelegate, UIImagePicke
             let alert = UIAlertController(title: "Camera Needed", message: "This app requires your device to have a camera.", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: nil))
             presentViewController(alert, animated: true, completion: nil)
-        }
-    }
-    
-    @IBAction func dateOfBirthTapped(sender: AnyObject) {
-        DatePickerDialog().show("Choose birthdate", callback: { (date) in
-            let dateText = date!.returnDateAsString() //{
-                self.dateOfBirth.text = dateText
-                self.model.setDateOfBirth(dateText)
-//            }
-            print(date)
-        })
-    }
-    
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        switch (textField) {
-        case dateOfBirth:
-            return false
-        default:
-            return true
         }
     }
     

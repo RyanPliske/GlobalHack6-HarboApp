@@ -1,11 +1,11 @@
 import Foundation
 
 class SeekerData {
-    var firstName: String!
-    var middleName: String!
-    var lastName: String!
-    var ssn: String!
-    var dateOfBirth: String!
+    var firstName: String?
+    var middleName: String?
+    var lastName: String?
+    var ssn: String?
+    var dateOfBirth: NSDate?
 }
 
 
@@ -29,10 +29,13 @@ class AddUserModel {
         seekerData.ssn = ssn
     }
     
-    func setDateOfBirth(dateOfBirth: String) {
+    func setDateOfBirth(dateOfBirth: NSDate) {
         seekerData.dateOfBirth = dateOfBirth
     }
     
+    func getDateOfBirth() -> NSDate? {
+        return seekerData.dateOfBirth
+    }
     
     func finalizeAndSend() {
         // Tell UserSession To Send SeekerData userSession.saveData(seekerData:SeekerData)

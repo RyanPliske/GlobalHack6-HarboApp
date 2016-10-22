@@ -17,6 +17,7 @@
 		85D9BDE21DBBE9E70043ED75 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDE11DBBE9E70043ED75 /* Session.swift */; };
 		85D9BDF61DBBF7550043ED75 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDF51DBBF7550043ED75 /* DatePickerDialog.swift */; };
 		85D9BDF81DBC00620043ED75 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDF71DBC00620043ED75 /* NSDate+Extension.swift */; };
+		85D9BDFC1DBC134C0043ED75 /* dateOfBirthTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDFB1DBC134C0043ED75 /* dateOfBirthTextView.swift */; };
 		F92FF9671DB456AF00C67430 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = F92FF9651DB456AF00C67430 /* Cartfile */; };
 		F92FF96A1DB45B2E00C67430 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F92FF9691DB45B2E00C67430 /* .gitignore */; };
 		F94380C01DB9A36F007328A5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94380BE1DB9A36F007328A5 /* FBSDKCoreKit.framework */; };
@@ -37,6 +38,7 @@
 		85D9BDE11DBBE9E70043ED75 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		85D9BDF51DBBF7550043ED75 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
 		85D9BDF71DBC00620043ED75 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		85D9BDFB1DBC134C0043ED75 /* dateOfBirthTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dateOfBirthTextView.swift; sourceTree = "<group>"; };
 		F92FF9651DB456AF00C67430 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		F92FF9691DB45B2E00C67430 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		F94380BE1DB9A36F007328A5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Checkouts/iosStarterKit/Frameworks/Facebook/FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				85D9BDF51DBBF7550043ED75 /* DatePickerDialog.swift */,
 				85D9BDD61DBBC6670043ED75 /* LandingPage */,
 				85D9BDE31DBBEAFF0043ED75 /* AddUser */,
+				85D9BDFB1DBC134C0043ED75 /* dateOfBirthTextView.swift */,
 			);
 			path = StarterKitExample;
 			sourceTree = "<group>";
@@ -170,7 +173,7 @@
 				TargetAttributes = {
 					F996D45D1DAA984E00DAC469 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = WBQ5Y4ZSH4;
+						DevelopmentTeam = 5E258MJ8X3;
 					};
 				};
 			};
@@ -246,6 +249,7 @@
 				85D9BDF81DBC00620043ED75 /* NSDate+Extension.swift in Sources */,
 				F996D4621DAA984E00DAC469 /* AppDelegate.swift in Sources */,
 				85D9BDDA1DBBC7D40043ED75 /* AddUserViewController.swift in Sources */,
+				85D9BDFC1DBC134C0043ED75 /* dateOfBirthTextView.swift in Sources */,
 				85D9BDE21DBBE9E70043ED75 /* Session.swift in Sources */,
 				85D9BDDE1DBBD5020043ED75 /* UIImage+Extension.swift in Sources */,
 				85D9BDE01DBBE2CF0043ED75 /* AddUserModel.swift in Sources */,
@@ -368,7 +372,7 @@
 				INFOPLIST_FILE = StarterKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = teamPurple.Harbor;
+				PRODUCT_BUNDLE_IDENTIFIER = teamPurple.Harbor1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -392,7 +396,7 @@
 				INFOPLIST_FILE = StarterKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = teamPurple.Harbor;
+				PRODUCT_BUNDLE_IDENTIFIER = teamPurple.Harbor1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

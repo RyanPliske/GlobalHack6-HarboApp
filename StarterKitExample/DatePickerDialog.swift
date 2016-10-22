@@ -61,7 +61,7 @@ public class DatePickerDialog: UIView {
     }
     
     /* Create the dialog view, and animate opening the dialog */
-    public func show(title: String, doneButtonTitle: String = "Done", cancelButtonTitle: String = "Cancel", defaultDate: NSDate = NSDate(), minimumDate: NSDate? = nil, maximumDate: NSDate? = nil, datePickerMode: UIDatePickerMode = .DateAndTime, callback: DatePickerCallback) {
+    public func show(title: String, doneButtonTitle: String = "Done", cancelButtonTitle: String = "Cancel", defaultDate: NSDate? = NSDate(), minimumDate: NSDate? = nil, maximumDate: NSDate? = nil, datePickerMode: UIDatePickerMode = .Date, callback: DatePickerCallback) {
         self.titleLabel.text = title
         self.doneButton.setTitle(doneButtonTitle, forState: .Normal)
         self.cancelButton.setTitle(cancelButtonTitle, forState: .Normal)
@@ -159,9 +159,9 @@ public class DatePickerDialog: UIView {
         dialogContainer.layer.shadowPath = UIBezierPath(roundedRect: dialogContainer.bounds, cornerRadius: dialogContainer.layer.cornerRadius).CGPath
         
         // There is a line above the button
-        let lineView = UIView(frame: CGRectMake(0, dialogContainer.bounds.size.height - kDatePickerDialogDefaultButtonHeight - kDatePickerDialogDefaultButtonSpacerHeight, dialogContainer.bounds.size.width, kDatePickerDialogDefaultButtonSpacerHeight))
-        lineView.backgroundColor = UIColor(red: 198/255, green: 198/255, blue: 198/255, alpha: 1)
-        dialogContainer.addSubview(lineView)
+//        let lineView = UIView(frame: CGRectMake(0, dialogContainer.bounds.size.height - kDatePickerDialogDefaultButtonHeight - kDatePickerDialogDefaultButtonSpacerHeight, dialogContainer.bounds.size.width, kDatePickerDialogDefaultButtonSpacerHeight))
+//        lineView.backgroundColor = UIColor(red: 198/255, green: 198/255, blue: 198/255, alpha: 1)
+//        dialogContainer.addSubview(lineView)
         // ˆˆˆ
         
         //Title
