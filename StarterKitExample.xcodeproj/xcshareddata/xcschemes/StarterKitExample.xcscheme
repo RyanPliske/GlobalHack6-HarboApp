@@ -17,7 +17,7 @@
                BlueprintIdentifier = "F95D54B21DA88D0600028D06"
                BuildableName = "StarterKit.framework"
                BlueprintName = "StarterKit"
-               ReferencedContainer = "container:../StarterKit/StarterKit.xcodeproj">
+               ReferencedContainer = "container:Carthage/Checkouts/iosStarterKit/StarterKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry

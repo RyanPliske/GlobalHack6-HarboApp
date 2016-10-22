@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, StarterKitDelegate {
         let fbInfo = FacebookInfo(facebookAppId: "580752305447916", facebookAppDisplayName: "StarterKit")
         let appInfo = AppInfo(facebookInfo: fbInfo)
         self.starter = Starter(window: &window, initialViewController: InitialViewController(), delegate: self, appInfo: appInfo)
+        
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85D9BDD01DBBBAB70043ED75 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D9BDCE1DBBBAB70043ED75 /* Fabric.framework */; };
+		85D9BDD11DBBBAB70043ED75 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D9BDCF1DBBBAB70043ED75 /* Crashlytics.framework */; };
 		F90E5D781DAAF71300064708 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E5D771DAAF71300064708 /* InitialViewController.swift */; };
 		F92FF9671DB456AF00C67430 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = F92FF9651DB456AF00C67430 /* Cartfile */; };
 		F92FF96A1DB45B2E00C67430 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F92FF9691DB45B2E00C67430 /* .gitignore */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85D9BDCE1DBBBAB70043ED75 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		85D9BDCF1DBBBAB70043ED75 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		F90E5D771DAAF71300064708 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		F92FF9651DB456AF00C67430 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		F92FF9691DB45B2E00C67430 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
@@ -37,6 +41,8 @@
 			files = (
 				F94380C01DB9A36F007328A5 /* FBSDKCoreKit.framework in Frameworks */,
 				F94380C11DB9A36F007328A5 /* FBSDKLoginKit.framework in Frameworks */,
+				85D9BDD11DBBBAB70043ED75 /* Crashlytics.framework in Frameworks */,
+				85D9BDD01DBBBAB70043ED75 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +52,8 @@
 		F996D4551DAA984E00DAC469 = {
 			isa = PBXGroup;
 			children = (
+				85D9BDCE1DBBBAB70043ED75 /* Fabric.framework */,
+				85D9BDCF1DBBBAB70043ED75 /* Crashlytics.framework */,
 				F94380BE1DB9A36F007328A5 /* FBSDKCoreKit.framework */,
 				F94380BF1DB9A36F007328A5 /* FBSDKLoginKit.framework */,
 				F996D4601DAA984E00DAC469 /* StarterKitExample */,
@@ -66,10 +74,10 @@
 			children = (
 				F92FF9691DB45B2E00C67430 /* .gitignore */,
 				F92FF9651DB456AF00C67430 /* Cartfile */,
+				F996D46A1DAA984E00DAC469 /* LaunchScreen.storyboard */,
 				F996D4611DAA984E00DAC469 /* AppDelegate.swift */,
 				F90E5D771DAAF71300064708 /* InitialViewController.swift */,
 				F996D4681DAA984E00DAC469 /* Assets.xcassets */,
-				F996D46A1DAA984E00DAC469 /* LaunchScreen.storyboard */,
 				F996D46D1DAA984E00DAC469 /* Info.plist */,
 			);
 			path = StarterKitExample;
@@ -86,6 +94,7 @@
 				F996D45B1DAA984E00DAC469 /* Frameworks */,
 				F996D45C1DAA984E00DAC469 /* Resources */,
 				F996D4A21DAA9E1B00DAC469 /* Carthage Copy */,
+				85D9BDCD1DBBBA9D0043ED75 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -145,6 +154,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		85D9BDCD1DBBBA9D0043ED75 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 34502d87f8f7159422d2852016238a4bc9fc8d17 5e0f64685ae8e9c34e55164dbf6f731e0144ad0b4ee2adae0280181c904cb848";
+		};
 		F996D4A21DAA9E1B00DAC469 /* Carthage Copy */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +302,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/iosStarterKit/Frameworks/Facebook",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = StarterKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -302,6 +325,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/iosStarterKit/Frameworks/Facebook",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = StarterKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
