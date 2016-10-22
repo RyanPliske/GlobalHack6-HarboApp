@@ -10,14 +10,14 @@ import UIKit
 
 class LandingPageViewController: UITabBarController {
 
+    var model: AddUserModel!
+    
+    @IBOutlet weak var landingPageTabBar: UITabBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        landingPageTabBar.items![2].image = UIImage.imageFromSystemBarButton(.Add)
+        
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

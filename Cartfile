@@ -1,1 +1,2 @@
 git "https://github.com/RyanPliske/iosStarterKit.git" "master"
+github "squimer/DatePickerDialog-iOS-Swift"

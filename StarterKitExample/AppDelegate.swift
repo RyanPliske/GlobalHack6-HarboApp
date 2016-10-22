@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, StarterKitDelegate {
         let storyboard = UIStoryboard.init(name: "LandingPage", bundle: NSBundle.mainBundle())
         
         let landingPageViewController = storyboard.instantiateInitialViewController() as! LandingPageViewController
-        
+                
         self.starter = Starter(window: &window, initialViewController: landingPageViewController, delegate: self, appInfo: appInfo)
         
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)

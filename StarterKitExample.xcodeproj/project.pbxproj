@@ -12,7 +12,11 @@
 		85D9BDD51DBBC4F30043ED75 /* LandingPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D9BDD41DBBC4F30043ED75 /* LandingPage.storyboard */; };
 		85D9BDDA1DBBC7D40043ED75 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDD91DBBC7D40043ED75 /* AddUserViewController.swift */; };
 		85D9BDDC1DBBCFC50043ED75 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDDB1DBBCFC50043ED75 /* LandingPageViewController.swift */; };
-		F90E5D781DAAF71300064708 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E5D771DAAF71300064708 /* InitialViewController.swift */; };
+		85D9BDDE1DBBD5020043ED75 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDDD1DBBD5020043ED75 /* UIImage+Extension.swift */; };
+		85D9BDE01DBBE2CF0043ED75 /* AddUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDDF1DBBE2CF0043ED75 /* AddUserModel.swift */; };
+		85D9BDE21DBBE9E70043ED75 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDE11DBBE9E70043ED75 /* Session.swift */; };
+		85D9BDF61DBBF7550043ED75 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDF51DBBF7550043ED75 /* DatePickerDialog.swift */; };
+		85D9BDF81DBC00620043ED75 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDF71DBC00620043ED75 /* NSDate+Extension.swift */; };
 		F92FF9671DB456AF00C67430 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = F92FF9651DB456AF00C67430 /* Cartfile */; };
 		F92FF96A1DB45B2E00C67430 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F92FF9691DB45B2E00C67430 /* .gitignore */; };
 		F94380C01DB9A36F007328A5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94380BE1DB9A36F007328A5 /* FBSDKCoreKit.framework */; };
@@ -28,7 +32,11 @@
 		85D9BDD41DBBC4F30043ED75 /* LandingPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LandingPage.storyboard; sourceTree = "<group>"; };
 		85D9BDD91DBBC7D40043ED75 /* AddUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
 		85D9BDDB1DBBCFC50043ED75 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
-		F90E5D771DAAF71300064708 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		85D9BDDD1DBBD5020043ED75 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		85D9BDDF1DBBE2CF0043ED75 /* AddUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserModel.swift; sourceTree = "<group>"; };
+		85D9BDE11DBBE9E70043ED75 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		85D9BDF51DBBF7550043ED75 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		85D9BDF71DBC00620043ED75 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		F92FF9651DB456AF00C67430 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		F92FF9691DB45B2E00C67430 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		F94380BE1DB9A36F007328A5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Checkouts/iosStarterKit/Frameworks/Facebook/FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -64,14 +72,41 @@
 			name = LandingPage;
 			sourceTree = "<group>";
 		};
-		F996D4551DAA984E00DAC469 = {
+		85D9BDE31DBBEAFF0043ED75 /* AddUser */ = {
+			isa = PBXGroup;
+			children = (
+				85D9BDD91DBBC7D40043ED75 /* AddUserViewController.swift */,
+				85D9BDDF1DBBE2CF0043ED75 /* AddUserModel.swift */,
+			);
+			name = AddUser;
+			sourceTree = "<group>";
+		};
+		85D9BDF91DBC00670043ED75 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				85D9BDF71DBC00620043ED75 /* NSDate+Extension.swift */,
+				85D9BDDD1DBBD5020043ED75 /* UIImage+Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		85D9BDFA1DBC05120043ED75 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				85D9BDCE1DBBBAB70043ED75 /* Fabric.framework */,
 				85D9BDCF1DBBBAB70043ED75 /* Crashlytics.framework */,
 				F94380BE1DB9A36F007328A5 /* FBSDKCoreKit.framework */,
 				F94380BF1DB9A36F007328A5 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F996D4551DAA984E00DAC469 = {
+			isa = PBXGroup;
+			children = (
 				F996D4601DAA984E00DAC469 /* StarterKitExample */,
+				85D9BDF91DBC00670043ED75 /* Extensions */,
+				85D9BDFA1DBC05120043ED75 /* Frameworks */,
 				F996D45F1DAA984E00DAC469 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,11 +126,12 @@
 				F92FF9651DB456AF00C67430 /* Cartfile */,
 				F996D46A1DAA984E00DAC469 /* LaunchScreen.storyboard */,
 				F996D4611DAA984E00DAC469 /* AppDelegate.swift */,
-				F90E5D771DAAF71300064708 /* InitialViewController.swift */,
+				85D9BDE11DBBE9E70043ED75 /* Session.swift */,
 				F996D4681DAA984E00DAC469 /* Assets.xcassets */,
 				F996D46D1DAA984E00DAC469 /* Info.plist */,
+				85D9BDF51DBBF7550043ED75 /* DatePickerDialog.swift */,
 				85D9BDD61DBBC6670043ED75 /* LandingPage */,
-				85D9BDD91DBBC7D40043ED75 /* AddUserViewController.swift */,
+				85D9BDE31DBBEAFF0043ED75 /* AddUser */,
 			);
 			path = StarterKitExample;
 			sourceTree = "<group>";
@@ -207,9 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D9BDF81DBC00620043ED75 /* NSDate+Extension.swift in Sources */,
 				F996D4621DAA984E00DAC469 /* AppDelegate.swift in Sources */,
 				85D9BDDA1DBBC7D40043ED75 /* AddUserViewController.swift in Sources */,
-				F90E5D781DAAF71300064708 /* InitialViewController.swift in Sources */,
+				85D9BDE21DBBE9E70043ED75 /* Session.swift in Sources */,
+				85D9BDDE1DBBD5020043ED75 /* UIImage+Extension.swift in Sources */,
+				85D9BDE01DBBE2CF0043ED75 /* AddUserModel.swift in Sources */,
+				85D9BDF61DBBF7550043ED75 /* DatePickerDialog.swift in Sources */,
 				85D9BDDC1DBBCFC50043ED75 /* LandingPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +363,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/iosStarterKit/Frameworks/Facebook",
 					"$(PROJECT_DIR)",
+					"$(SRCROOT)/Carthage/Build/iOS/DatePickerDialogFramework.framework",
 				);
 				INFOPLIST_FILE = StarterKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -346,6 +387,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Checkouts/iosStarterKit/Frameworks/Facebook",
 					"$(PROJECT_DIR)",
+					"$(SRCROOT)/Carthage/Build/iOS/DatePickerDialogFramework.framework",
 				);
 				INFOPLIST_FILE = StarterKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
