@@ -327,9 +327,9 @@
 				INFOPLIST_FILE = StarterKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = competidev.StarterKitExample;
+				PRODUCT_BUNDLE_IDENTIFIER = teamPurple.Harbor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "577430cd-8cb6-4705-9ed1-e1a217d858f1";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -350,9 +350,9 @@
 				INFOPLIST_FILE = StarterKitExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = competidev.StarterKitExample;
+				PRODUCT_BUNDLE_IDENTIFIER = teamPurple.Harbor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "577430cd-8cb6-4705-9ed1-e1a217d858f1";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
