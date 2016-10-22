@@ -170,7 +170,7 @@
 				TargetAttributes = {
 					F996D45D1DAA984E00DAC469 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = J6NNP4FP23;
+						DevelopmentTeam = WBQ5Y4ZSH4;
 					};
 				};
 			};
@@ -370,7 +370,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = teamPurple.Harbor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "577430cd-8cb6-4705-9ed1-e1a217d858f1";
+				PROVISIONING_PROFILE = "ee28d94b-9a38-4d97-9fee-caa75d15230c";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -394,7 +394,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = teamPurple.Harbor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "577430cd-8cb6-4705-9ed1-e1a217d858f1";
+				PROVISIONING_PROFILE = "ee28d94b-9a38-4d97-9fee-caa75d15230c";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

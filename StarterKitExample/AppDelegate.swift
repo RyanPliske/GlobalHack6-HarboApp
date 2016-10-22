@@ -2,6 +2,8 @@ import UIKit
 import StarterKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, StarterKitDelegate {
@@ -10,6 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, StarterKitDelegate {
     var starter: Starter!
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        Fabric.with([Crashlytics.self])
         let fbInfo = FacebookInfo(facebookAppId: "580752305447916", facebookAppDisplayName: "StarterKit")
         let appInfo = AppInfo(facebookInfo: fbInfo)
         
