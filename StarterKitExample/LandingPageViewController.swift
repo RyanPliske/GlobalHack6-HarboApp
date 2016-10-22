@@ -8,10 +8,8 @@
 
 import UIKit
 
-class LandingPageViewController: UIViewController {
+class LandingPageViewController: UITabBarController {
 
-    @IBOutlet weak var addNew: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,15 +20,4 @@ class LandingPageViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func addNewTapped(sender: AnyObject) {
-        performSegueWithIdentifier("Add User", sender: self)
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let destinationVC = segue.destinationViewController as? AddUserViewController {
-            print("yesyesyesyesyesyes")
-        }
-    }
-
 }

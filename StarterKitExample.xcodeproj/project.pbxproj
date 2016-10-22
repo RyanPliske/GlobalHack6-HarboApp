@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		85D9BDD01DBBBAB70043ED75 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D9BDCE1DBBBAB70043ED75 /* Fabric.framework */; };
 		85D9BDD11DBBBAB70043ED75 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D9BDCF1DBBBAB70043ED75 /* Crashlytics.framework */; };
-		85D9BDD31DBBC4EB0043ED75 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDD21DBBC4EB0043ED75 /* LandingPageViewController.swift */; };
 		85D9BDD51DBBC4F30043ED75 /* LandingPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D9BDD41DBBC4F30043ED75 /* LandingPage.storyboard */; };
-		85D9BDD81DBBC7B00043ED75 /* AddUser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D9BDD71DBBC7B00043ED75 /* AddUser.storyboard */; };
 		85D9BDDA1DBBC7D40043ED75 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDD91DBBC7D40043ED75 /* AddUserViewController.swift */; };
+		85D9BDDC1DBBCFC50043ED75 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDDB1DBBCFC50043ED75 /* LandingPageViewController.swift */; };
 		F90E5D781DAAF71300064708 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E5D771DAAF71300064708 /* InitialViewController.swift */; };
 		F92FF9671DB456AF00C67430 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = F92FF9651DB456AF00C67430 /* Cartfile */; };
 		F92FF96A1DB45B2E00C67430 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F92FF9691DB45B2E00C67430 /* .gitignore */; };
@@ -26,10 +25,9 @@
 /* Begin PBXFileReference section */
 		85D9BDCE1DBBBAB70043ED75 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		85D9BDCF1DBBBAB70043ED75 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		85D9BDD21DBBC4EB0043ED75 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		85D9BDD41DBBC4F30043ED75 /* LandingPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LandingPage.storyboard; sourceTree = "<group>"; };
-		85D9BDD71DBBC7B00043ED75 /* AddUser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddUser.storyboard; sourceTree = "<group>"; };
 		85D9BDD91DBBC7D40043ED75 /* AddUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
+		85D9BDDB1DBBCFC50043ED75 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		F90E5D771DAAF71300064708 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		F92FF9651DB456AF00C67430 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		F92FF9691DB45B2E00C67430 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
@@ -60,7 +58,7 @@
 		85D9BDD61DBBC6670043ED75 /* LandingPage */ = {
 			isa = PBXGroup;
 			children = (
-				85D9BDD21DBBC4EB0043ED75 /* LandingPageViewController.swift */,
+				85D9BDDB1DBBCFC50043ED75 /* LandingPageViewController.swift */,
 				85D9BDD41DBBC4F30043ED75 /* LandingPage.storyboard */,
 			);
 			name = LandingPage;
@@ -97,7 +95,6 @@
 				F996D4681DAA984E00DAC469 /* Assets.xcassets */,
 				F996D46D1DAA984E00DAC469 /* Info.plist */,
 				85D9BDD61DBBC6670043ED75 /* LandingPage */,
-				85D9BDD71DBBC7B00043ED75 /* AddUser.storyboard */,
 				85D9BDD91DBBC7D40043ED75 /* AddUserViewController.swift */,
 			);
 			path = StarterKitExample;
@@ -169,7 +166,6 @@
 				F92FF9671DB456AF00C67430 /* Cartfile in Resources */,
 				F996D46C1DAA984E00DAC469 /* LaunchScreen.storyboard in Resources */,
 				F996D4691DAA984E00DAC469 /* Assets.xcassets in Resources */,
-				85D9BDD81DBBC7B00043ED75 /* AddUser.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,8 +209,8 @@
 			files = (
 				F996D4621DAA984E00DAC469 /* AppDelegate.swift in Sources */,
 				85D9BDDA1DBBC7D40043ED75 /* AddUserViewController.swift in Sources */,
-				85D9BDD31DBBC4EB0043ED75 /* LandingPageViewController.swift in Sources */,
 				F90E5D781DAAF71300064708 /* InitialViewController.swift in Sources */,
+				85D9BDDC1DBBCFC50043ED75 /* LandingPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
