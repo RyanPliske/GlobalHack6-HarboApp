@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lub-Q1-n2A">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landing Page View Controller-->
+        <scene sceneID="Jmt-XR-Ztx">
+            <objects>
+                <viewController id="Lub-Q1-n2A" customClass="LandingPageViewController" customModule="StarterKitExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jFx-rl-VwY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kua-aO-DIQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tHa-xq-Gxm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wlo-Ac-wEX">
+                                <rect key="frame" x="20" y="49" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1I-x1-kph">
+                                <rect key="frame" x="269" y="105" width="63" height="30"/>
+                                <state key="normal" title="Add New"/>
+                                <connections>
+                                    <action selector="addNewTapped:" destination="Lub-Q1-n2A" eventType="touchUpInside" id="JBt-7J-bhn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVc-VZ-3Wb">
+                                <rect key="frame" x="283" y="186" width="35" height="30"/>
+                                <state key="normal" title="Scan"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEp-d0-0sM">
+                                <rect key="frame" x="20" y="20" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T1I-x1-kph" firstAttribute="top" secondItem="wlo-Ac-wEX" secondAttribute="bottom" constant="26" id="36A-8X-TRe"/>
+                            <constraint firstItem="wlo-Ac-wEX" firstAttribute="centerX" secondItem="T1I-x1-kph" secondAttribute="centerX" id="7B0-zD-Ig4"/>
+                            <constraint firstItem="aVc-VZ-3Wb" firstAttribute="top" secondItem="T1I-x1-kph" secondAttribute="bottom" constant="51" id="Qxm-HR-Q5X"/>
+                            <constraint firstItem="WEp-d0-0sM" firstAttribute="leading" secondItem="tHa-xq-Gxm" secondAttribute="leadingMargin" id="XbQ-At-TPh"/>
+                            <constraint firstItem="WEp-d0-0sM" firstAttribute="top" secondItem="jFx-rl-VwY" secondAttribute="bottom" id="YBe-eA-f80"/>
+                            <constraint firstItem="T1I-x1-kph" firstAttribute="centerX" secondItem="aVc-VZ-3Wb" secondAttribute="centerX" id="b2h-K5-2Df"/>
+                            <constraint firstItem="WEp-d0-0sM" firstAttribute="leading" secondItem="wlo-Ac-wEX" secondAttribute="leading" id="d4r-I7-Qqi"/>
+                            <constraint firstItem="wlo-Ac-wEX" firstAttribute="trailing" secondItem="tHa-xq-Gxm" secondAttribute="trailingMargin" id="fZM-C1-3Me"/>
+                            <constraint firstItem="wlo-Ac-wEX" firstAttribute="top" secondItem="WEp-d0-0sM" secondAttribute="bottom" constant="8" symbolic="YES" id="m7S-RM-bec"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addNew" destination="T1I-x1-kph" id="BQD-Un-IZp"/>
+                        <segue destination="4PD-jp-ic7" kind="presentation" identifier="Add User" id="gOX-DC-JIa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FDI-ps-eS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="366"/>
+        </scene>
+        <!--AddUser-->
+        <scene sceneID="94X-1y-gqu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddUser" id="4PD-jp-ic7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Gk-vH-7c3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890.5" y="316"/>
+        </scene>
+    </scenes>
+</document>

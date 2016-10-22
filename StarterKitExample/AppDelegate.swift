@@ -12,7 +12,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, StarterKitDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         let fbInfo = FacebookInfo(facebookAppId: "580752305447916", facebookAppDisplayName: "StarterKit")
         let appInfo = AppInfo(facebookInfo: fbInfo)
-        self.starter = Starter(window: &window, initialViewController: InitialViewController(), delegate: self, appInfo: appInfo)
+        
+        let storyboard = UIStoryboard.init(name: "LandingPage", bundle: NSBundle.mainBundle())
+        
+        let landingPageViewController = storyboard.instantiateInitialViewController() as! LandingPageViewController
+        
+        self.starter = Starter(window: &window, initialViewController: landingPageViewController, delegate: self, appInfo: appInfo)
         
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
