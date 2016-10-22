@@ -16,8 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, StarterKitDelegate {
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    @available(iOS 9.0, *)
+    func application(application: UIApplication,openURL url: NSURL, options: [String: AnyObject]) -> Bool {
+        let returnValue = FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: options[UIApplicationOpenURLOptionsSourceApplicationKey] as! String, annotation: options[UIApplicationOpenURLOptionsAnnotationKey])
+        return returnValue
+    }
+    
+    @available(iOS, introduced=8.0, deprecated=9.0)
+    func application(application: UIApplication,openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication!, annotation: annotation)
     }
     
     func userWasAuthenticated(withCredentials credentials: Credentials) {
