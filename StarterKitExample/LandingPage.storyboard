@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d1N-ga-Tnu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d1N-ga-Tnu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -167,6 +167,19 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVK-ck-eJ0">
+                                        <rect key="frame" x="13" y="288" width="99" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="DkI-me-gch"/>
+                                        </constraints>
+                                        <state key="normal" title="Take Photo"/>
+                                        <connections>
+                                            <action selector="takePhotoPressed:" destination="LAg-w9-rc6" eventType="touchUpInside" id="qpE-Fy-Gac"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPG-Ng-dHz">
+                                        <rect key="frame" x="134" y="262" width="240" height="128"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -180,6 +193,7 @@
                                     <constraint firstItem="Mgg-8G-cVn" firstAttribute="leading" secondItem="Pde-hC-EUA" secondAttribute="leading" id="FK3-DC-V0x"/>
                                     <constraint firstItem="vvr-q6-fOb" firstAttribute="top" secondItem="bJP-VI-Bn7" secondAttribute="bottom" constant="10" id="G7y-LQ-2Jz"/>
                                     <constraint firstItem="gty-IL-XoZ" firstAttribute="leading" secondItem="KoE-V9-QH8" secondAttribute="leading" id="Gop-Kc-YyI"/>
+                                    <constraint firstItem="dVK-ck-eJ0" firstAttribute="leading" secondItem="GJS-b9-ToS" secondAttribute="leading" constant="13" id="KZF-0d-oNf"/>
                                     <constraint firstItem="gty-IL-XoZ" firstAttribute="trailing" secondItem="KoE-V9-QH8" secondAttribute="trailing" id="Kcd-yO-fq8"/>
                                     <constraint firstItem="bJP-VI-Bn7" firstAttribute="centerY" secondItem="Mgg-8G-cVn" secondAttribute="centerY" id="KjB-Bk-C9L"/>
                                     <constraint firstItem="bJP-VI-Bn7" firstAttribute="trailing" secondItem="vvr-q6-fOb" secondAttribute="trailing" id="P7e-Mk-hAH"/>
@@ -189,9 +203,11 @@
                                     <constraint firstAttribute="trailing" secondItem="gty-IL-XoZ" secondAttribute="trailing" constant="20" id="Z2s-Zd-548"/>
                                     <constraint firstItem="iEV-zS-w46" firstAttribute="leading" secondItem="sIK-Yh-y1L" secondAttribute="leading" id="ZB8-jt-rZk"/>
                                     <constraint firstItem="sIK-Yh-y1L" firstAttribute="top" secondItem="iEV-zS-w46" secondAttribute="bottom" constant="20" id="aRQ-hg-tP5"/>
+                                    <constraint firstItem="dVK-ck-eJ0" firstAttribute="centerX" secondItem="b3y-ZM-Ceh" secondAttribute="centerX" id="azq-Nd-P3Y"/>
                                     <constraint firstItem="KoE-V9-QH8" firstAttribute="top" secondItem="gty-IL-XoZ" secondAttribute="bottom" constant="8" symbolic="YES" id="dXZ-DK-HBK"/>
                                     <constraint firstItem="iEV-zS-w46" firstAttribute="leading" secondItem="GJS-b9-ToS" secondAttribute="leading" constant="20" id="gqJ-lb-neN"/>
                                     <constraint firstItem="KoE-V9-QH8" firstAttribute="trailing" secondItem="Kte-9S-zLE" secondAttribute="trailing" id="jWG-UX-55z"/>
+                                    <constraint firstItem="dVK-ck-eJ0" firstAttribute="top" secondItem="Pde-hC-EUA" secondAttribute="bottom" constant="75" id="ksz-Rr-ceP"/>
                                     <constraint firstItem="Kte-9S-zLE" firstAttribute="top" secondItem="KoE-V9-QH8" secondAttribute="bottom" constant="10" id="luQ-u2-gf9"/>
                                     <constraint firstItem="Kte-9S-zLE" firstAttribute="leading" secondItem="vvr-q6-fOb" secondAttribute="leading" id="m8u-UR-kYl"/>
                                     <constraint firstItem="bJP-VI-Bn7" firstAttribute="trailing" secondItem="Kte-9S-zLE" secondAttribute="trailing" id="p70-kz-swl"/>
@@ -217,7 +233,9 @@
                         <outlet property="firstName" destination="gty-IL-XoZ" id="spC-Sz-kFa"/>
                         <outlet property="lastName" destination="Kte-9S-zLE" id="LKy-bV-az0"/>
                         <outlet property="middleName" destination="KoE-V9-QH8" id="fDM-En-KcP"/>
+                        <outlet property="photoImageView" destination="vPG-Ng-dHz" id="ETc-1p-2g0"/>
                         <outlet property="ssn" destination="vvr-q6-fOb" id="olt-wq-ONg"/>
+                        <outlet property="takePhotoButton" destination="dVK-ck-eJ0" id="x2x-Aw-wwG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QbK-vP-G7u" userLabel="First Responder" sceneMemberID="firstResponder"/>

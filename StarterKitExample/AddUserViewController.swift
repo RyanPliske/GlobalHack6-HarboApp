@@ -71,6 +71,7 @@ class AddUserViewController: UIViewController, UITextFieldDelegate, UIImagePicke
             presentViewController(alert, animated: true, completion: nil)
         }
     }
+
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         // Pull out JPEG Information
