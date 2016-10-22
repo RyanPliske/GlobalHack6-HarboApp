@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, StarterKitDelegate {
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+    
     func userWasAuthenticated(withCredentials credentials: Credentials) {
         ApplicationSession.mainInstance.userSession = UserSession(credentials: credentials)
     }
