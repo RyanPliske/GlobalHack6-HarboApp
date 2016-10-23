@@ -45,7 +45,7 @@
 		F9356B321DBC61BE006AA1B6 /* StarterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StarterKit.framework; path = Carthage/Build/iOS/StarterKit.framework; sourceTree = "<group>"; };
 		F94380BE1DB9A36F007328A5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Checkouts/iosStarterKit/Frameworks/Facebook/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		F94380BF1DB9A36F007328A5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Checkouts/iosStarterKit/Frameworks/Facebook/FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		F996D45E1DAA984E00DAC469 /* StarterKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F996D45E1DAA984E00DAC469 /* Harbor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harbor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F996D4611DAA984E00DAC469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F996D4681DAA984E00DAC469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F996D46B1DAA984E00DAC469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		F996D45F1DAA984E00DAC469 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F996D45E1DAA984E00DAC469 /* StarterKitExample.app */,
+				F996D45E1DAA984E00DAC469 /* Harbor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F996D45D1DAA984E00DAC469 /* StarterKitExample */ = {
+		F996D45D1DAA984E00DAC469 /* Harbor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F996D4701DAA984E00DAC469 /* Build configuration list for PBXNativeTarget "StarterKitExample" */;
+			buildConfigurationList = F996D4701DAA984E00DAC469 /* Build configuration list for PBXNativeTarget "Harbor" */;
 			buildPhases = (
 				F996D45A1DAA984E00DAC469 /* Sources */,
 				F996D45B1DAA984E00DAC469 /* Frameworks */,
@@ -160,9 +160,9 @@
 			);
 			dependencies = (
 			);
-			name = StarterKitExample;
+			name = Harbor;
 			productName = StarterKitExample;
-			productReference = F996D45E1DAA984E00DAC469 /* StarterKitExample.app */;
+			productReference = F996D45E1DAA984E00DAC469 /* Harbor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -181,7 +181,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F996D4591DAA984E00DAC469 /* Build configuration list for PBXProject "StarterKitExample" */;
+			buildConfigurationList = F996D4591DAA984E00DAC469 /* Build configuration list for PBXProject "Harbor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -194,7 +194,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F996D45D1DAA984E00DAC469 /* StarterKitExample */,
+				F996D45D1DAA984E00DAC469 /* Harbor */,
 			);
 		};
 /* End PBXProject section */
@@ -378,7 +378,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = teamPurple.Harbor;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Harbor;
 				PROVISIONING_PROFILE = "ee28d94b-9a38-4d97-9fee-caa75d15230c";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,7 +403,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = teamPurple.Harbor;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Harbor;
 				PROVISIONING_PROFILE = "ee28d94b-9a38-4d97-9fee-caa75d15230c";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -412,7 +412,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F996D4591DAA984E00DAC469 /* Build configuration list for PBXProject "StarterKitExample" */ = {
+		F996D4591DAA984E00DAC469 /* Build configuration list for PBXProject "Harbor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F996D46E1DAA984E00DAC469 /* Debug */,
@@ -421,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F996D4701DAA984E00DAC469 /* Build configuration list for PBXNativeTarget "StarterKitExample" */ = {
+		F996D4701DAA984E00DAC469 /* Build configuration list for PBXNativeTarget "Harbor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F996D4711DAA984E00DAC469 /* Debug */,
