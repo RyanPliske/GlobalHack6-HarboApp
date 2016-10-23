@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, StarterKitDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Fabric.with([Crashlytics.self])
         let fbInfo = FacebookInfo(facebookAppId: "580752305447916", facebookAppDisplayName: "StarterKit")
-        let appInfo = AppInfo(facebookInfo: fbInfo)
+        let logo = UIImage(named: "LoginLogo")
+        let appInfo = AppInfo(facebookInfo: fbInfo, logoImage: logo)
         
         let storyboard = UIStoryboard.init(name: "LandingPage", bundle: NSBundle.mainBundle())
         

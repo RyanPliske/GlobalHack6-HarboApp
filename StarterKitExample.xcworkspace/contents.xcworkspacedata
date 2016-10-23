@@ -4,7 +4,4 @@
    <FileRef
       location = "group:StarterKitExample.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/iosStarterKit/StarterKit.xcodeproj">
-   </FileRef>
 </Workspace>

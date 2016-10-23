@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F95D54B21DA88D0600028D06"
-               BuildableName = "StarterKit.framework"
-               BlueprintName = "StarterKit"
-               ReferencedContainer = "container:Carthage/Checkouts/iosStarterKit/StarterKit.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "F996D45D1DAA984E00DAC469"
                BuildableName = "StarterKitExample.app"
                BlueprintName = "StarterKitExample"
