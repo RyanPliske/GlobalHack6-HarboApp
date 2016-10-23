@@ -4,11 +4,13 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0C67662E2A10F70EBE4DA3BBC4540BD51EFE1E1B" : 0,
     "77FCC55B7BA252286A8257733118EB83C0E63580" : 0,
     "7BE9474C70417C0EBCD4D122E70705D47E0BD609" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "08EF2D1D-54E8-4C2D-8694-91A3B90DE6E8",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0C67662E2A10F70EBE4DA3BBC4540BD51EFE1E1B" : "iosStarterKitExample\/RSBarcodes_Swift\/",
     "77FCC55B7BA252286A8257733118EB83C0E63580" : "StarterKitExample\/",
     "7BE9474C70417C0EBCD4D122E70705D47E0BD609" : "StarterKit\/"
   },
@@ -16,6 +18,11 @@
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "StarterKitExample.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yeahdongcn\/RSBarcodes_Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0C67662E2A10F70EBE4DA3BBC4540BD51EFE1E1B"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RyanPliske\/iosStarterKitExample.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

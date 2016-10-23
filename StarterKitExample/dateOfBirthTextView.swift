@@ -1,7 +1,7 @@
 
 import UIKit
 
-class dateOfBirthTextView: UITextView {
+class DateOfBirthTextView: UITextView {
     
     var model: AddUserModel?
     

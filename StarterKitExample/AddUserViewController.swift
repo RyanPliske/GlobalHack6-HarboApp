@@ -2,11 +2,7 @@ import UIKit
 
 class AddUserViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    
-    
     @IBOutlet weak var dateOfBirth: UITextView!
-    
-//    @IBOutlet weak var dateOfBirth: UITextView!
     @IBOutlet weak var ssn: UITextField!
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var middleName: UITextField!
@@ -14,15 +10,23 @@ class AddUserViewController: UIViewController, UITextFieldDelegate, UIImagePicke
     @IBOutlet weak var takePhotoButton: UIButton!
     @IBOutlet weak var photoImageView: UIImageView!
     
-    let model = AddUserModel()
+    let model = Session.mainInstance.model
     
     @IBOutlet weak var addUserTab: UITabBarItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let firstName = model.seekerData.firstName,
+        middleName = model.seekerData.middleName,
+            lastName = model.seekerData.lastName {
+            self.lastName.text = lastName
+            self.firstName.text = firstName
+            self.middleName.text = middleName
+        }
 
         ssn.delegate = self
-        if let dob = dateOfBirth as? dateOfBirthTextView {
+        if let dob = dateOfBirth as? DateOfBirthTextView {
             dob.model = model
         }
 //        dateOfBirth.userInteractionEnabled = false

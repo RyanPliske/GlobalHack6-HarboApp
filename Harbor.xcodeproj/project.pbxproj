@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8550EA8D1DBC64D400C398EF /* RSBarcodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8550EA8C1DBC64D400C398EF /* RSBarcodes.framework */; };
+		8550EA8F1DBC722900C398EF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8550EA8E1DBC722900C398EF /* String+Extension.swift */; };
 		85D9BDD01DBBBAB70043ED75 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D9BDCE1DBBBAB70043ED75 /* Fabric.framework */; };
 		85D9BDD11DBBBAB70043ED75 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D9BDCF1DBBBAB70043ED75 /* Crashlytics.framework */; };
 		85D9BDD51DBBC4F30043ED75 /* LandingPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D9BDD41DBBC4F30043ED75 /* LandingPage.storyboard */; };
@@ -17,7 +19,8 @@
 		85D9BDE21DBBE9E70043ED75 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDE11DBBE9E70043ED75 /* Session.swift */; };
 		85D9BDF61DBBF7550043ED75 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDF51DBBF7550043ED75 /* DatePickerDialog.swift */; };
 		85D9BDF81DBC00620043ED75 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDF71DBC00620043ED75 /* NSDate+Extension.swift */; };
-		85D9BDFC1DBC134C0043ED75 /* dateOfBirthTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDFB1DBC134C0043ED75 /* dateOfBirthTextView.swift */; };
+		85D9BDFC1DBC134C0043ED75 /* DateOfBirthTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDFB1DBC134C0043ED75 /* DateOfBirthTextView.swift */; };
+		85D9BDFE1DBC514E0043ED75 /* BarCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9BDFD1DBC514E0043ED75 /* BarCodeScannerViewController.swift */; };
 		F92FF9671DB456AF00C67430 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = F92FF9651DB456AF00C67430 /* Cartfile */; };
 		F92FF96A1DB45B2E00C67430 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F92FF9691DB45B2E00C67430 /* .gitignore */; };
 		F9356B331DBC61BE006AA1B6 /* StarterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9356B321DBC61BE006AA1B6 /* StarterKit.framework */; };
@@ -28,7 +31,22 @@
 		F996D46C1DAA984E00DAC469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F996D46A1DAA984E00DAC469 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		85D9BE071DBC54C20043ED75 /* Copy Framework */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Framework";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8550EA8C1DBC64D400C398EF /* RSBarcodes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSBarcodes.framework; path = Carthage/Build/iOS/RSBarcodes.framework; sourceTree = "<group>"; };
+		8550EA8E1DBC722900C398EF /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		85D9BDCE1DBBBAB70043ED75 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		85D9BDCF1DBBBAB70043ED75 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		85D9BDD41DBBC4F30043ED75 /* LandingPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LandingPage.storyboard; sourceTree = "<group>"; };
@@ -39,7 +57,8 @@
 		85D9BDE11DBBE9E70043ED75 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		85D9BDF51DBBF7550043ED75 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
 		85D9BDF71DBC00620043ED75 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
-		85D9BDFB1DBC134C0043ED75 /* dateOfBirthTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dateOfBirthTextView.swift; sourceTree = "<group>"; };
+		85D9BDFB1DBC134C0043ED75 /* DateOfBirthTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateOfBirthTextView.swift; sourceTree = "<group>"; };
+		85D9BDFD1DBC514E0043ED75 /* BarCodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarCodeScannerViewController.swift; sourceTree = "<group>"; };
 		F92FF9651DB456AF00C67430 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		F92FF9691DB45B2E00C67430 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		F9356B321DBC61BE006AA1B6 /* StarterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StarterKit.framework; path = Carthage/Build/iOS/StarterKit.framework; sourceTree = "<group>"; };
@@ -62,6 +81,7 @@
 				F94380C11DB9A36F007328A5 /* FBSDKLoginKit.framework in Frameworks */,
 				85D9BDD11DBBBAB70043ED75 /* Crashlytics.framework in Frameworks */,
 				85D9BDD01DBBBAB70043ED75 /* Fabric.framework in Frameworks */,
+				8550EA8D1DBC64D400C398EF /* RSBarcodes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +111,7 @@
 			children = (
 				85D9BDF71DBC00620043ED75 /* NSDate+Extension.swift */,
 				85D9BDDD1DBBD5020043ED75 /* UIImage+Extension.swift */,
+				8550EA8E1DBC722900C398EF /* String+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -99,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				F9356B321DBC61BE006AA1B6 /* StarterKit.framework */,
+				8550EA8C1DBC64D400C398EF /* RSBarcodes.framework */,
 				85D9BDCE1DBBBAB70043ED75 /* Fabric.framework */,
 				85D9BDCF1DBBBAB70043ED75 /* Crashlytics.framework */,
 				F94380BE1DB9A36F007328A5 /* FBSDKCoreKit.framework */,
@@ -138,7 +160,8 @@
 				85D9BDF51DBBF7550043ED75 /* DatePickerDialog.swift */,
 				85D9BDD61DBBC6670043ED75 /* LandingPage */,
 				85D9BDE31DBBEAFF0043ED75 /* AddUser */,
-				85D9BDFB1DBC134C0043ED75 /* dateOfBirthTextView.swift */,
+				85D9BDFB1DBC134C0043ED75 /* DateOfBirthTextView.swift */,
+				85D9BDFD1DBC514E0043ED75 /* BarCodeScannerViewController.swift */,
 			);
 			path = StarterKitExample;
 			sourceTree = "<group>";
@@ -155,6 +178,7 @@
 				F996D45C1DAA984E00DAC469 /* Resources */,
 				F996D4A21DAA9E1B00DAC469 /* Carthage Copy */,
 				85D9BDCD1DBBBA9D0043ED75 /* ShellScript */,
+				85D9BE071DBC54C20043ED75 /* Copy Framework */,
 			);
 			buildRules = (
 			);
@@ -235,6 +259,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/StarterKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RSBarcodes.framework",
 			);
 			name = "Carthage Copy";
 			outputPaths = (
@@ -251,11 +276,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				85D9BDF81DBC00620043ED75 /* NSDate+Extension.swift in Sources */,
+				8550EA8F1DBC722900C398EF /* String+Extension.swift in Sources */,
 				F996D4621DAA984E00DAC469 /* AppDelegate.swift in Sources */,
 				85D9BDDA1DBBC7D40043ED75 /* AddUserViewController.swift in Sources */,
-				85D9BDFC1DBC134C0043ED75 /* dateOfBirthTextView.swift in Sources */,
+				85D9BDFC1DBC134C0043ED75 /* DateOfBirthTextView.swift in Sources */,
 				85D9BDE21DBBE9E70043ED75 /* Session.swift in Sources */,
 				85D9BDDE1DBBD5020043ED75 /* UIImage+Extension.swift in Sources */,
+				85D9BDFE1DBC514E0043ED75 /* BarCodeScannerViewController.swift in Sources */,
 				85D9BDE01DBBE2CF0043ED75 /* AddUserModel.swift in Sources */,
 				85D9BDF61DBBF7550043ED75 /* DatePickerDialog.swift in Sources */,
 				85D9BDDC1DBBCFC50043ED75 /* LandingPageViewController.swift in Sources */,
@@ -372,6 +399,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/iosStarterKit/Frameworks/Facebook",
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/Carthage/Build/iOS/DatePickerDialogFramework.framework",
+					"$(PROJECT_DIR)/RSBarcodes_Swift/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = StarterKitExample/Info.plist;
@@ -397,6 +425,7 @@
 					"$(PROJECT_DIR)/Carthage/Checkouts/iosStarterKit/Frameworks/Facebook",
 					"$(PROJECT_DIR)",
 					"$(SRCROOT)/Carthage/Build/iOS/DatePickerDialogFramework.framework",
+					"$(PROJECT_DIR)/RSBarcodes_Swift/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = StarterKitExample/Info.plist;

@@ -1,1 +1,2 @@
 git "https://github.com/RyanPliske/iosStarterKit.git" "master"
+github "yeahdongcn/RSBarcodes_Swift" "426594eeb7718f5c0afcb6865e37f2a19395ba5e"

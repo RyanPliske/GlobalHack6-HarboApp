@@ -1,4 +1,7 @@
 class Session {
+    
+    var model: AddUserModel = AddUserModel()
+    
     static let mainInstance: Session = {
         return Session()
     }()
